@@ -1,10 +1,16 @@
 const readline = require("readline-sync");
 const messages = require("./calculator_messages.json");
 
+const LANGUAGE = readline.question(messages["en"]["language"]);
+
+function getMessages(message, lang = LANGUAGE) {
+  return `=> ${messages[lang][message]}`;
+}
+
 let performAnotherCalculation = "y";
 
 function prompt(message) {
-  console.log(`=> ${message}`);
+  console.log(`${message}`);
 }
 
 function invalidNumber(number) {
@@ -32,19 +38,19 @@ function performOperation(number1, number2, operation) {
 }
 
 function getNumbers() {
-  prompt(messages.firstNumber);
+  prompt(getMessages("firstNumber"));
   let number1 = readline.question();
 
   while (invalidNumber(number1)) {
-    prompt(messages.invalidNumber);
+    prompt(getMessages("invalidNumber"));
     number1 = readline.question();
   }
 
-  prompt(messages.secondNumber);
+  prompt(getMessages("secondNumber"));
   let number2 = readline.question();
 
   while (invalidNumber(number2)) {
-    prompt(messages.invalidNumber);
+    prompt(getMessages("invalidNumber"));
     number2 = readline.question();
   }
 
@@ -52,11 +58,11 @@ function getNumbers() {
 }
 
 function getOperation() {
-  prompt(messages.operation);
+  prompt(getMessages("operation"));
   let operation = readline.question();
 
   while (!["1", "2", "3", "4"].includes(operation)) {
-    prompt(messages.chooseOperation);
+    prompt(getMessages("chooseOperation"));
     operation = readline.question();
   }
 
@@ -70,14 +76,14 @@ function calculate() {
 
   let output = performOperation(number1, number2, operation);
 
-  prompt(`${messages.result} ${output}`);
+  prompt(`${getMessages("result")} ${output}`);
 }
 
-prompt(messages.welcome);
+prompt(getMessages("welcome"));
 
 do {
   calculate();
-  prompt(messages.reCalculate);
+  prompt(getMessages("reCalculate"));
 
   performAnotherCalculation = readline.question();
 } while (performAnotherCalculation[0].toLowerCase() === "y");
