@@ -1,10 +1,35 @@
 {
-  "firstNumber": "What is the first number",
-  "secondNumber": "What is the second number",
-  "invalidNumber": "Hmm... that doesn't look like a valid number.",
-  "operation": "What operation would you like to perform?\n1) Add 2) substract 3) Multiply 4) Divide",
-  "chooseOperation": "Must choose 1, 2, 3 or 4",
-  "welcome": "Welcome to the calculator",
-  "reCalculate": "enter 'y' if you want to perform another calculation",
-  "result": "the result is "
+  "en": {
+    "firstNumber": "What is the first number",
+    "secondNumber": "What is the second number",
+    "invalidNumber": "Hmm... that doesn't look like a valid number.",
+    "operation": "What operation would you like to perform?\n1) Add 2) substract 3) Multiply 4) Divide",
+    "chooseOperation": "Must choose 1, 2, 3 or 4",
+    "welcome": "Welcome to the calculator",
+    "reCalculate": "enter 'y' if you want to perform another calculation",
+    "result": "the result is ",
+    "language": "what is your prefered language? 'en', 'fr', or 'es' "
+  },
+  "fr": {
+    "firstNumber": "Quel est le premier nombre",
+    "secondNumber": "Quel est le deuxième nombre",
+    "invalidNumber": "Hmm... ça ne ressemble pas à un numéro valide.",
+    "operation": "Quelle opération souhaitez-vous effectuer ?\n1) Ajouter 2) soustraire 3) Multiplier 4) Diviser",
+    "chooseOperation": "Vous devez choisir 1, 2, 3 ou 4",
+    "welcome": "Bienvenue dans le calculateur",
+    "reCalculate": "entrez 'y' si vous souhaitez effectuer un autre calcul",
+    "result": "le résultat est",
+    "language": "quelle est votre langue préférée? 'en', 'fr' ou 'es'"
+  },
+  "es": {
+    "firstNumber": "cual es el primer numero",
+    "secondNumber": "cual es el segundo numero",
+    "invalidNumber": "Hmm... eso no parece un número válido.",
+    "operation": "Qué operación quieres realizar?\n 1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+    "chooseOperation": "Debe elegir 1, 2, 3 o 4",
+    "welcome": "Bienvenido a la calculadora",
+    "reCalculate": "ingrese 'y' si desea realizar otro cálculo",
+    "result": "el resultado es",
+    "language": "Cuál es tu idioma preferido? 'en', 'fr' o 'es'"
+  }
 }
