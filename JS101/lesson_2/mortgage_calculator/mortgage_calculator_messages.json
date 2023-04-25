@@ -1,0 +1,10 @@
+{
+  "en": {
+    "welcome": "welcome",
+    "loanAmount": "please enter the loan amount (example) 200 ",
+    "APR": "please enter the APR '5' for 5% '2.5' for 2.5% ",
+    "loanDuration": "please enter the loan duration in years ",
+    "monthlyPayment": "the monthly payment is ",
+    "calculateAgain": "do you want to calculate another loan? enter 'y' if so and 'n' if not"
+  }
+}
